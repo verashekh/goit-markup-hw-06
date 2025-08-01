@@ -20,12 +20,12 @@
   <body>
     <!-- Page header -->
     <header class="page-header">
-      <div class="container-menu container">
-        <nav class="page-nav">
+      <div class="header-container container">
+        <nav class="header-nav">
           <a href="./index.html" class="logo-web"
             >Web<span class="logo-studio">Studio</span></a
           >
-          <ul class="menu">
+          <ul class="nav-list">
             <li class="item">
               <a href="./index.html" class="list active">Studio</a>
             </li>
@@ -33,6 +33,7 @@
             <li class="item"><a href="" class="list">Contacts</a></li>
           </ul>
         </nav>
+
         <!-- Contacts -->
         <address class="contacts">
           <ul class="menu">
@@ -46,6 +47,94 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li class="item">
+                <a href="./index.html" class="mobile-menu-list active"
+                  >Studio</a
+                >
+              </li>
+              <li class="item">
+                <a href="" class="mobile-menu-list">Portfolio</a>
+              </li>
+              <li class="item">
+                <a href="" class="mobile-menu-list">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-menu">
+              <li class="item">
+                <a href="tel:+110001111111" class="mobile-menu-links active"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-links"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="social-media-icon-footer">
+              <li class="media-icon-footer">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="insta-footer"
+                >
+                  <svg class="media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-icon-footer">
+                <a href="https://x.com/" target="_blank" class="insta-footer">
+                  <svg class="media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-icon-footer">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="insta-footer"
+                >
+                  <svg class="media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-icon-footer">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="insta-footer"
+                >
+                  <svg class="media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -53,7 +142,7 @@
       <!-- Main content -->
       <!-- Section hero -->
       <section class="section-hero">
-        <div class="container">
+        <div class="container container-hero">
           <h1 class="section-title-hero">
             Effective Solutions for Your Business
           </h1>
@@ -120,7 +209,7 @@
 
       <!-- Our team -->
       <section class="section-team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="section-title-team">Our Team</h2>
           <ul class="team">
             <li class="team-players">
@@ -355,8 +444,8 @@
                 </p>
               </div>
               <div class="container-our-portfolio-descr">
-                <h3 class="our-features-title">Banking App</h3>
-                <p class="our-features-descr">App</p>
+                <h3 class=".our-portfolio-title">Banking App</h3>
+                <p class=".our-portfolio-descr">App</p>
               </div>
             </li>
             <li class="portfolio-cards">
@@ -373,8 +462,8 @@
                 </p>
               </div>
               <div class="container-our-portfolio-descr">
-                <h3 class="our-features-title">Cashless Payment</h3>
-                <p class="our-features-descr">Marketing</p>
+                <h3 class="our-portfolio-title">Cashless Payment</h3>
+                <p class="our-portfolio-descr">Marketing</p>
               </div>
             </li>
             <li class="portfolio-cards">
@@ -391,8 +480,8 @@
                 </p>
               </div>
               <div class="container-our-portfolio-descr">
-                <h3 class="our-features-title">Meditation App</h3>
-                <p class="our-features-descr">App</p>
+                <h3 class="our-portfolio-title">Meditation App</h3>
+                <p class="our-portfolio-descr">App</p>
               </div>
             </li>
             <li class="portfolio-cards">
@@ -409,8 +498,8 @@
                 </p>
               </div>
               <div class="container-our-portfolio-descr">
-                <h3 class="our-features-title">Taxi Service</h3>
-                <p class="our-features-descr">Marketing</p>
+                <h3 class="our-portfolio-title">Taxi Service</h3>
+                <p class="our-portfolio-descr">Marketing</p>
               </div>
             </li>
             <li class="portfolio-cards">
@@ -427,8 +516,8 @@
                 </p>
               </div>
               <div class="container-our-portfolio-descr">
-                <h3 class="our-features-title">Screen Illustrations</h3>
-                <p class="our-features-descr">Design</p>
+                <h3 class="our-portfolio-title">Screen Illustrations</h3>
+                <p class="our-portfolio-descr">Design</p>
               </div>
             </li>
             <li class="portfolio-cards">
@@ -445,8 +534,8 @@
                 </p>
               </div>
               <div class="container-our-portfolio-descr">
-                <h3 class="our-features-title">Online Courses</h3>
-                <p class="our-features-descr">Marketing</p>
+                <h3 class="our-portfolio-title">Online Courses</h3>
+                <p class="our-portfolio-descr">Marketing</p>
               </div>
             </li>
           </ul>
@@ -515,29 +604,32 @@
 
         <!-- Form in footer-->
         <div class="container-subscribe-footer">
-          <p class="social-media-title">Subscribe</p>
-          <form class="form-footer">
-            <label class="form-label-footer">
-              <input
-                type="email"
-                class="form-input-footer"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="subscribe" type="submit">
-              Subscribe
-              <svg class="form-icon-footer" width="24" height="24">
-                <use href="./images/icons.svg#icon-frame"></use>
-              </svg>
-            </button>
-          </form>
+          <div class="email-input">
+            <p class="social-media-title-sub">Subscribe</p>
+            <form class="form-footer">
+              <label class="form-label-footer">
+                <input
+                  type="email"
+                  class="form-input-footer"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </form>
+          </div>
+
+          <button class="subscribe" type="submit">
+            Subscribe
+            <svg class="form-icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
 
     <!-- Modal content -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay is-open hidden">
       <div class="modal">
         <!-- Button -->
         <button class="close-modal-btn" type="button">
