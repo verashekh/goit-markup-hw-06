@@ -874,8 +874,15 @@ focus {
   .container-logo-web-footer {
     width: 264px;
     align-items: start;
+    margin-left: 0;
   }
 }
+@media screen and (min-width: 1158px) {
+  .container-logo-web-footer {
+    margin-left: 0;
+  }
+}
+
 .logo-web-footer {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -960,7 +967,6 @@ focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
   }
 }
 .container-subscribe-footer {
@@ -974,7 +980,9 @@ focus {
   .container-subscribe-footer {
     width: 453px;
     margin-right: 207px;
+    display: flex;
     flex-direction: row;
+    gap: 24px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -987,7 +995,13 @@ focus {
   .email-input {
     display: flex;
     flex-direction: column;
-    margin-right: 24px;
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .email-input {
+    margin-left: 0;
+    width: 264px;
   }
 }
 
@@ -1063,6 +1077,8 @@ focus {
 @media screen and (min-width: 768px) {
   .subscribe {
     margin-top: 40px;
+    margin-right: 0;
+    margin-left: 24px;
   }
 }
 
