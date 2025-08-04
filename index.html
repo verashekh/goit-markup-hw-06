@@ -91,7 +91,7 @@
             </ul>
           </address>
           <div>
-            <ul class="social-media-icon-footer">
+            <ul class="social-media-icon-mobile-menu">
               <li class="media-icon-footer">
                 <a
                   href="https://www.instagram.com/"
@@ -208,7 +208,7 @@
       </section>
 
       <!-- Our team -->
-      <section class="section-team">
+      <section class="section section-team">
         <div class="container container-team">
           <h2 class="section-title-team">Our Team</h2>
           <ul class="team">
@@ -450,7 +450,7 @@
           <h2 class="section-title-team">Our Portfolio</h2>
           <ul class="portfolio">
             <li class="portfolio-cards">
-              <div class="picture">
+              <div class="picture-text">
                 <picture class="mob-port-pic">
                   <source
                     media="(min-width: 1158px)"
@@ -485,12 +485,12 @@
                 </p>
               </div>
               <div class="container-our-portfolio-descr">
-                <h3 class=".our-portfolio-title">Banking App</h3>
-                <p class=".our-portfolio-descr">App</p>
+                <h3 class="our-portfolio-title">Banking App</h3>
+                <p class="our-portfolio-descr">App</p>
               </div>
             </li>
             <li class="portfolio-cards">
-              <div class="picture">
+              <div class="picture-text">
                 <picture class="mob-port-pic">
                   <source
                     media="(min-width: 1158px)"
@@ -530,7 +530,7 @@
               </div>
             </li>
             <li class="portfolio-cards">
-              <div class="picture">
+              <div class="picture-text">
                 <picture class="mob-port-pic">
                   <source
                     media="(min-width: 1158px)"
@@ -570,7 +570,7 @@
               </div>
             </li>
             <li class="portfolio-cards">
-              <div class="picture">
+              <div class="picture-text">
                 <picture class="mob-port-pic">
                   <source
                     media="(min-width: 1158px)"
@@ -610,7 +610,7 @@
               </div>
             </li>
             <li class="portfolio-cards">
-              <div class="picture">
+              <div class="picture-text">
                 <picture class="mob-port-pic">
                   <source
                     media="(min-width: 1158px)"
@@ -650,7 +650,7 @@
               </div>
             </li>
             <li class="portfolio-cards">
-              <div class="picture">
+              <div class="picture-text">
                 <picture class="mob-port-pic">
                   <source
                     media="(min-width: 1158px)"
@@ -693,7 +693,6 @@
         </div>
       </section>
     </main>
-
     <!-- footer -->
     <footer class="section-footer">
       <div class="container-footer container">
@@ -755,26 +754,24 @@
 
         <!-- Form in footer-->
         <div class="container-subscribe-footer">
-          <div class="email-input">
-            <p class="social-media-title-sub">Subscribe</p>
-            <form class="form-footer">
-              <label class="form-label-footer">
-                <input
-                  type="email"
-                  class="form-input-footer"
-                  name="email"
-                  placeholder="E-mail"
-                />
-              </label>
-            </form>
-          </div>
-
-          <button class="subscribe" type="submit">
-            Subscribe
-            <svg class="form-icon-footer" width="24" height="24">
-              <use href="./images/icons.svg#icon-frame"></use>
-            </svg>
-          </button>
+          <form class="form-footer">
+            <label class="form-label-footer" for="email">Subscribe</label>
+            <div class="flex-form">
+              <input
+                type="email"
+                class="form-input-footer"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button class="subscribe" type="submit">
+                Subscribe
+                <svg class="form-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-frame"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
