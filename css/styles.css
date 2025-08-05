@@ -225,9 +225,9 @@ button {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mobile-menu-container {
@@ -911,6 +911,12 @@ focus {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container-media-footer {
+    margin: 0;
+  }
 }
 
 .social-media-icon-footer {
@@ -960,14 +966,15 @@ focus {
   .form-label-footer {
     text-align: left;
   }
-
-  .flex-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
 }
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .flex-form {
     display: flex;
